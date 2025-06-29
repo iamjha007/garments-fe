@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <!-- SEO Meta Tags -->
+   <title>Aura Apparel - Premium Garment Manufacturer</title>
+   <meta name="description" content="Aura Apparel is a leading garment manufacturer specializing in high-quality shirts, trousers, jackets, and custom apparel for B2B clients. Discover our commitment to craftsmanship and sustainability.">
+   <meta name="keywords" content="garment manufacturer, apparel manufacturing, private label clothing, shirt manufacturer, trouser manufacturer, jacket manufacturer, sustainable fashion">
+   <link rel="canonical" href="https://www.auraapparel.com/"> <!-- Replace with your actual domain -->
+
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.auraapparel.com/"> <!-- Replace with your actual domain -->
+   <meta property="og:title" content="Aura Apparel - Premium Garment Manufacturer">
+   <meta property="og:description" content="Partner with Aura Apparel for high-quality garment manufacturing, from classic shirts to modern trousers and jackets.">
+   <meta property="og:image" content="https://images.unsplash.com/photo-1529397938791-2aba4681454f?q=80&w=1200&auto=format&fit=crop"> <!-- Replace with a link to a hero image -->
+
+
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://www.auraapparel.com/"> <!-- Replace with your actual domain -->
+   <meta property="twitter:title" content="Aura Apparel - Premium Garment Manufacturer">
+   <meta property="twitter:description" content="Partner with Aura Apparel for high-quality garment manufacturing, from classic shirts to modern trousers and jackets.">
+   <meta property="twitter:image" content="https://images.unsplash.com/photo-1529397938791-2aba4681454f?q=80&w=1200&auto=format&fit=crop"> <!-- Replace with a link to a hero image -->
+
+
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+  
+   <!-- Google Fonts: Inter -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+   <!-- Favicon -->
+   <link rel="icon" href="https://placehold.co/32x32/111827/FFFFFF?text=A" type="image/png">
+
+
+   <!-- Custom Styles -->
+   <style>
+       body {
+           font-family: 'Inter', sans-serif;
+           background-color: #f9fafb; /* Light Gray Background */
+       }
+       .hero-bg {
+           background-image: url('images/main.jpg');
+           background-size: cover;
+           background-position: center 70%;
+       }
+       .scroll-container {
+           -ms-overflow-style: none;  /* IE and Edge */
+           scrollbar-width: none;  /* Firefox */
+       }
+       .scroll-container::-webkit-scrollbar {
+           display: none; /* Chrome, Safari, and Opera */
+       }
+       .group:hover .group-hover\:block {
+           display: block;
+       }
+       .group:hover .group-hover\:opacity-100 {
+           opacity: 1;
+       }
+       /* Fade-in animation for elements on scroll */
+       .fade-in {
+           opacity: 0;
+           transform: translateY(20px);
+           transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+       }
+       .fade-in.visible {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   </style>
+</head>
+<body class="text-gray-800">
+
+
+   <!-- Header -->
+   <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+       <div class="container mx-auto px-6 py-4">
+           <div class="flex items-center justify-between">
+               <!-- Logo -->
+               <a href="#home" class="text-2xl font-bold text-gray-900 tracking-wider">
+                   AURA
+               </a>
+
+
+               <!-- Desktop Navigation -->
+               <nav class="hidden lg:flex items-center space-x-8" aria-label="Main Navigation">
+                   <a href="#home" class="text-gray-600 hover:text-gray-900 transition">Home</a>
+                   <a href="#categories" class="text-gray-600 hover:text-gray-900 transition">Categories</a>
+                   <a href="#about" class="text-gray-600 hover:text-gray-900 transition">About Us</a>
+                   <a href="#sustainability" class="text-gray-600 hover:text-gray-900 transition">Sustainability</a>
+                   <a href="#contact" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
+               </nav>
+
+
+               <!-- CTA and Mobile Menu Button -->
+               <div class="flex items-center space-x-4">
+                   <a href="#contact" class="hidden sm:inline-block bg-gray-800 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-700 transition shadow">
+                       Bulk Inquiry
+                   </a>
+                   <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                   </button>
+               </div>
+           </div>
+       </div>
+
+
+       <!-- Mobile Navigation -->
+       <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+           <nav class="flex flex-col space-y-4" aria-label="Mobile Navigation">
+               <a href="#home" class="text-gray-600 hover:text-gray-900 transition block py-2">Home</a>
+               <a href="#categories" class="text-gray-600 hover:text-gray-900 transition block py-2">Categories</a>
+               <a href="#about" class="text-gray-600 hover:text-gray-900 transition block py-2">About Us</a>
+               <a href="#sustainability" class="text-gray-600 hover:text-gray-900 transition block py-2">Sustainability</a>
+               <a href="#contact" class="text-gray-600 hover:text-gray-900 transition block py-2">Contact</a>
+               <a href="#contact" class="sm:hidden mt-4 w-full text-center bg-gray-800 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-700 transition shadow">
+                   Bulk Inquiry
+               </a>
+           </nav>
+       </div>
+   </header>
+
+
+   <!-- Main Content -->
+   <main>
+       <!-- Hero Section -->
+       <section id="home" class="hero-bg relative h-[80vh] min-h-[500px] flex items-center">
+           <div class="absolute inset-0 bg-black/50"></div>
+           <div class="container mx-auto px-6 relative z-10 text-center text-white">
+               <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight fade-in">Crafting Apparel with Precision & Passion</h1>
+               <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200 fade-in" style="transition-delay: 0.2s;">Your trusted partner in high-quality garment manufacturing, from classic shirts to modern trousers.</p>
+               <a href="#categories" class="bg-white text-gray-900 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition shadow-lg transform hover:scale-105 fade-in" style="transition-delay: 0.4s;">
+                   Explore Our Categories
+               </a>
+           </div>
+       </section>
+
+
+       <!-- Product Categories Section -->
+       <section id="categories" class="py-16 md:py-24 bg-white">
+           <div class="container mx-auto px-6">
+               <div class="text-center mb-12 fade-in">
+                   <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Categories</h2>
+                   <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Expertly constructed garments designed for style, comfort, and durability.</p>
+               </div>
+
+
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                   <!-- Category 1: Shirts -->
+                   <div class="group relative overflow-hidden rounded-lg shadow-lg fade-in">
+                       <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=2787&auto=format&fit=crop" alt="A collection of folded formal and casual shirts." class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Shirts';">
+                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                       <div class="absolute bottom-0 left-0 p-6">
+                           <h3 class="text-2xl font-semibold text-white">Shirts</h3>
+                           <p class="text-gray-200 mt-2">Formal, casual, and polo shirts with superior fabric and fit.</p>
+                           <a href="category-shirts.html" class="mt-4 inline-block text-white font-semibold group-hover:underline">View Products &rarr;</a>
+                       </div>
+                   </div>
+
+
+                   <!-- Category 2: Trousers & Pants -->
+                   <div class="group relative overflow-hidden rounded-lg shadow-lg fade-in" style="transition-delay: 0.1s;">
+                       <img src="https://images.unsplash.com/photo-1594938294224-9b2a7a4c90b8?q=80&w=2787&auto=format&fit=crop" alt="A man wearing well-tailored formal trousers." class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Trousers';">
+                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                       <div class="absolute bottom-0 left-0 p-6">
+                           <h3 class="text-2xl font-semibold text-white">Trousers & Pants</h3>
+                           <p class="text-gray-200 mt-2">From formal trousers to comfortable chinos and rugged cargos.</p>
+                           <a href="category-trousers.html" class="mt-4 inline-block text-white font-semibold group-hover:underline">View Products &rarr;</a>
+                       </div>
+                   </div>
+                  
+                   <!-- Category 3: Jackets & Outerwear -->
+                   <div class="group relative overflow-hidden rounded-lg shadow-lg fade-in" style="transition-delay: 0.2s;">
+                       <img src="https://images.unsplash.com/photo-1592878912213-14a6a5d713c7?q=80&w=2787&auto=format&fit=crop" alt="A stylish denim jacket hanging on a rack." class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Jackets';">
+                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                       <div class="absolute bottom-0 left-0 p-6">
+                           <h3 class="text-2xl font-semibold text-white">Jackets & Outerwear</h3>
+                           <p class="text-gray-200 mt-2">Durable and stylish jackets, blazers, and vests for all seasons.</p>
+                           <a href="category-jackets.html" class="mt-4 inline-block text-white font-semibold group-hover:underline">View Products &rarr;</a>
+                       </div>
+                   </div>
+
+
+                   <!-- Category 4: Denim -->
+                   <div class="group relative overflow-hidden rounded-lg shadow-lg fade-in">
+                       <img src="https://images.unsplash.com/photo-1604176354204-926873782855?q=80&w=2787&auto=format&fit=crop" alt="A stack of folded denim jeans." class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Denim';">
+                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                       <div class="absolute bottom-0 left-0 p-6">
+                           <h3 class="text-2xl font-semibold text-white">Denim</h3>
+                           <p class="text-gray-200 mt-2">Classic and contemporary denim jeans, shorts, and jackets.</p>
+                           <a href="category-denim.html" class="mt-4 inline-block text-white font-semibold group-hover:underline">View Products &rarr;</a>
+                       </div>
+                   </div>
+
+
+                   <!-- Category 5: Activewear -->
+                   <div class="group relative overflow-hidden rounded-lg shadow-lg fade-in" style="transition-delay: 0.1s;">
+                       <img src="https://images.unsplash.com/photo-1551698332-b58a1b241c09?q=80&w=2864&auto=format&fit=crop" alt="Close-up of technical fabric on activewear pants." class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Activewear';">
+                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                       <div class="absolute bottom-0 left-0 p-6">
+                           <h3 class="text-2xl font-semibold text-white">Activewear</h3>
+                           <p class="text-gray-200 mt-2">Performance apparel for sports and fitness activities.</p>
+                           <a href="category-activewear.html" class="mt-4 inline-block text-white font-semibold group-hover:underline">View Products &rarr;</a>
+                       </div>
+                   </div>
+                  
+                   <!-- Category 6: Kids Wear -->
+                   <div class="group relative overflow-hidden rounded-lg shadow-lg fade-in" style="transition-delay: 0.2s;">
+                       <img src="https://images.unsplash.com/photo-1596294361093-26a9b4578b66?q=80&w=2787&auto=format&fit=crop" alt="A collection of colorful kids clothing." class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Kids+Wear';">
+                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                       <div class="absolute bottom-0 left-0 p-6">
+                           <h3 class="text-2xl font-semibold text-white">Kids Wear</h3>
+                           <p class="text-gray-200 mt-2">Fun, comfortable, and durable clothing for children of all ages.</p>
+                           <a href="category-kids.html" class="mt-4 inline-block text-white font-semibold group-hover:underline">View Products &rarr;</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+       <!-- About Us Section -->
+       <section id="about" class="py-16 md:py-24 bg-gray-50">
+           <div class="container mx-auto px-6">
+               <div class="flex flex-col lg:flex-row items-center gap-12">
+                   <div class="lg:w-1/2 fade-in">
+                       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">A Legacy of Quality Garment Making</h2>
+                       <p class="text-gray-600 mb-4 text-lg">For over three decades, Aura Apparel has been a trusted manufacturing partner for brands worldwide. Our journey began with a simple mission: to produce garments of uncompromising quality and fit.</p>
+                       <p class="text-gray-600 mb-6">We blend precision engineering with skilled craftsmanship. From pattern making and cutting to stitching and finishing, our team ensures every garment meets the highest standards of excellence.</p>
+                       <a href="#" class="text-gray-800 font-semibold hover:text-gray-900 transition">Learn More About Our Process &rarr;</a>
+                   </div>
+                   <div class="lg:w-1/2 fade-in" style="transition-delay: 0.2s;">
+                       <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?q=80&w=2938&auto=format&fit=crop" alt="A tailor measuring fabric in a workshop." class="rounded-lg shadow-xl w-full" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFFFFF?text=Craftsmanship';">
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+       <!-- Sustainability Section -->
+       <section id="sustainability" class="py-16 md:py-24 bg-white">
+           <div class="container mx-auto px-6">
+               <div class="text-center mb-12 fade-in">
+                   <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Committed to a Greener Wardrobe</h2>
+                   <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">We believe in fashion that feels good and does good. Our sustainability efforts are stitched into every garment we produce.</p>
+               </div>
+               <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                   <!-- Feature 1: Eco-Friendly Materials -->
+                   <div class="p-8 border border-gray-200 rounded-lg fade-in">
+                       <div class="bg-teal-100 text-teal-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
+                           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg>
+                       </div>
+                       <h3 class="text-xl font-semibold text-gray-900 mb-2">Sustainable Fabrics</h3>
+                       <p class="text-gray-600">Sourcing certified organic cotton, recycled polyester, and other low-impact materials for our collections.</p>
+                   </div>
+                   <!-- Feature 2: Waste Reduction -->
+                   <div class="p-8 border border-gray-200 rounded-lg fade-in" style="transition-delay: 0.1s;">
+                       <div class="bg-blue-100 text-blue-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
+                          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                       </div>
+                       <h3 class="text-xl font-semibold text-gray-900 mb-2">Waste Reduction</h3>
+                       <p class="text-gray-600">Optimizing our cutting processes to minimize fabric waste and recycling scraps whenever possible.</p>
+                   </div>
+                   <!-- Feature 3: Ethical Production -->
+                   <div class="p-8 border border-gray-200 rounded-lg fade-in" style="transition-delay: 0.2s;">
+                       <div class="bg-purple-100 text-purple-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
+                           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197"></path></svg>
+                       </div>
+                       <h3 class="text-xl font-semibold text-gray-900 mb-2">Ethical Factories</h3>
+                       <p class="text-gray-600">Ensuring fair wages, safe working conditions, and a commitment to the well-being of our entire production team.</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+
+
+       <!-- Contact Section -->
+       <section id="contact" class="py-16 md:py-24 bg-gray-800 text-white">
+           <div class="container mx-auto px-6">
+               <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                   <div class="fade-in">
+                       <h2 class="text-3xl md:text-4xl font-bold mb-4">Become a Production Partner</h2>
+                       <p class="text-gray-300 mb-8 text-lg">Ready to bring your designs to life? We offer full-package production and private label services. Contact our team for a quote or to discuss your manufacturing needs.</p>
+                       <div class="space-y-4">
+                           <p class="flex items-center"><svg class="w-5 h-5 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 123 Garment District, Apparel City, 11002</p>
+                           <p class="flex items-center"><svg class="w-5 h-5 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> production@auraapparel.com</p>
+                           <p class="flex items-center"><svg class="w-5 h-5 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> +1 (234) 567-891</p>
+                       </div>
+                   </div>
+                   <div class="bg-white p-8 rounded-lg shadow-2xl text-gray-800 fade-in" style="transition-delay: 0.2s;">
+                       <form action="#" method="POST">
+                           <div class="mb-5">
+                               <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
+                               <input type="text" id="name" name="name" class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-gray-800 focus:border-gray-800" placeholder="John Doe" required>
+                           </div>
+                           <div class="mb-5">
+                               <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email Address</label>
+                               <input type="email" id="email" name="email" class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-gray-800 focus:border-gray-800" placeholder="you@company.com" required>
+                           </div>
+                           <div class="mb-5">
+                               <label for="message" class="block mb-2 text-sm font-medium text-gray-700">Message / Inquiry</label>
+                               <textarea id="message" name="message" rows="4" class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-gray-800 focus:border-gray-800" placeholder="Tell us about your brand and production needs..."></textarea>
+                           </div>
+                           <button type="submit" class="w-full bg-gray-800 text-white font-bold py-3 px-5 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 transition">Send Inquiry</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-white">
+       <div class="container mx-auto px-6 py-12">
+           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+               <!-- About -->
+               <div class="col-span-1 md:col-span-1">
+                   <h4 class="text-xl font-bold tracking-wider mb-4">AURA</h4>
+                   <p class="text-gray-400">Premium garment manufacturing with a commitment to quality, innovation, and sustainability.</p>
+               </div>
+               <!-- Links -->
+               <div>
+                   <h5 class="font-semibold text-gray-200 mb-4">Quick Links</h5>
+                   <ul class="space-y-2">
+                       <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                       <li><a href="#categories" class="text-gray-400 hover:text-white transition">Categories</a></li>
+                       <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                       <li><a href="#sustainability" class="text-gray-400 hover:text-white transition">Sustainability</a></li>
+                   </ul>
+               </div>
+               <!-- Resources -->
+               <div>
+                   <h5 class="font-semibold text-gray-200 mb-4">Resources</h5>
+                   <ul class="space-y-2">
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">Production Process</a></li>
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                   </ul>
+               </div>
+               <!-- Social -->
+               <div>
+                   <h5 class="font-semibold text-gray-200 mb-4">Follow Us</h5>
+                   <div class="flex space-x-4">
+                       <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+                       <a href="#" class="text-gray-400 hover:text-white transition" aria-label="GitHub"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.286 2.768 7.917 6.519 9.141.477.088.65-.207.65-.461 0-.226-.008-.825-.013-1.62-2.688.584-3.255-1.298-3.255-1.298-.434-1.103-1.06-1.396-1.06-1.396-.867-.593.065-.581.065-.581.958.067 1.462 1.005 1.462 1.005.851 1.458 2.231 1.037 2.775.793.087-.616.333-1.037.606-1.276-2.118-.24-4.344-1.059-4.344-4.714 0-1.041.373-1.891 1.005-2.558-.101-.241-.437-1.21.095-2.522 0 0 .799-.256 2.62 1.005a8.7 8.7 0 014.76 0c1.821-1.26 2.617-1.005 2.617-1.005.533 1.312.197 2.28.096 2.522.634.667 1.003 1.517 1.003 2.558 0 3.665-2.229 4.472-4.354 4.705.342.295.648.88.648 1.772 0 1.276-.011 2.308-.011 2.62 0 .256.172.552.655.461C19.232 19.917 22 16.286 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg></a>
+                       <a href="#" class="text-gray-400 hover:text-white transition" aria-label="LinkedIn"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+                   </div>
+               </div>
+           </div>
+           <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+               <p>&copy; 2025 Aura Apparel. All Rights Reserved.</p>
+           </div>
+       </div>
+   </footer>
+
+
+   <!-- JavaScript for Interactivity -->
+   <script>
+       // Manages the mobile menu toggle functionality
+       const mobileMenuButton = document.getElementById('mobile-menu-button');
+       const mobileMenu = document.getElementById('mobile-menu');
+      
+       mobileMenuButton.addEventListener('click', () => {
+           const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+           mobileMenu.classList.toggle('hidden');
+           mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+       });
+
+
+       // Manages the fade-in animation for elements on scroll
+       const faders = document.querySelectorAll('.fade-in');
+      
+       const appearOptions = {
+           threshold: 0.1,
+           rootMargin: "0px 0px -50px 0px" // Start animation a bit before it's fully in view
+       };
+
+
+       const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+           entries.forEach(entry => {
+               if (!entry.isIntersecting) {
+                   return;
+               } else {
+                   entry.target.classList.add('visible');
+                   appearOnScroll.unobserve(entry.target);
+               }
+           });
+       }, appearOptions);
+
+
+       faders.forEach(fader => {
+           appearOnScroll.observe(fader);
+       });
+
+
+   </script>
+
+
+</body>
+</html>
+
+
+
