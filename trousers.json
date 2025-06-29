@@ -1,0 +1,59 @@
+[
+    {
+      "id": "TRS-001",
+      "name": "Classic Fit Chinos",
+      "sku": "TRS-001",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Classic+Chinos",
+      "link": "product-TRS-001.html"
+    },
+    {
+      "id": "TRS-002",
+      "name": "Slim Fit Dress Pants",
+      "sku": "TRS-002",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Dress+Pants",
+      "link": "product-TRS-002.html"
+    },
+    {
+      "id": "TRS-003",
+      "name": "Comfort Stretch Jeans",
+      "sku": "TRS-003",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Stretch+Jeans",
+      "link": "product-TRS-003.html"
+    },
+    {
+      "id": "TRS-004",
+      "name": "Casual Cargo Trousers",
+      "sku": "TRS-004",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Cargo+Trousers",
+      "link": "product-TRS-004.html"
+    },
+    {
+      "id": "TRS-005",
+      "name": "Athletic Joggers",
+      "sku": "TRS-005",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Athletic+Joggers",
+      "link": "product-TRS-005.html"
+    },
+    {
+      "id": "TRS-006",
+      "name": "Wool Blend Slacks",
+      "sku": "TRS-006",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Wool+Slacks",
+      "link": "product-TRS-006.html"
+    },
+    {
+      "id": "TRS-007",
+      "name": "Pleated Work Pants",
+      "sku": "TRS-007",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Work+Pants",
+      "link": "product-TRS-007.html"
+    },
+    {
+      "id": "TRS-008",
+      "name": "Corduroy Trousers",
+      "sku": "TRS-008",
+      "image": "https://placehold.co/500x600/e2e8f0/334155?text=Corduroy+Trousers",
+      "link": "product-TRS-008.html"
+    }
+  ]
+  
